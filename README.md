@@ -84,3 +84,29 @@ $$
 
 Here, $\beta_j$ are the regression coefficients obtained using least squares.
 
+Specifically:
+
+$$
+Y = A \cdot \hat{\beta}
+$$
+
+where:
+
+- \( Y = (y_1, y_2, \dots, y_M)^T \) is the vector of future discounted payoffs (continuation values), with \( y_l = e^{-r(\tau' - t_i)} G_l(\tau') \) for \( l = 1, \dots, M \), where \( \tau' \) is the optimal exercise time in \( \{t_{i+1}, t_{i+2}, \dots, t_n = T\} \), and \( G_l \) is the payoff of the \( l \)-th path.
+- \( \hat{\beta} = (\hat{\beta}_0, \hat{\beta}_1, \dots, \hat{\beta}_k)^T \) are the regression coefficients.
+- \( A_{M \times k} \) is the matrix of basis functions, where \( A_{lj} = L_j(S_l(t_i)) \), \( l = 1, \dots, M \), \( j = 0, 1, \dots, k \) (e.g., for a 2nd-degree polynomial, \( A = [1, 1 - X, \frac{1}{2}(2 - 4X + X^2)] \)).
+
+The least squares solution for \( \hat{\beta} \) is:
+
+$$
+\hat{\beta} = (A^{T}A)^{-1}A^{T}Y
+$$
+
+It can be shown that:
+
+$$
+\lim_{k \to \infty} \widehat{V}(S_l(t_i)) = V(S_l(t_i)) \quad \forall l \in \{1, \dots, M\}
+$$
+
+but without knowing the rate of convergence.
+
