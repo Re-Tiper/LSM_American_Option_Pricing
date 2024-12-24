@@ -3,8 +3,7 @@
 
 We present the **LSM (Least Squares Monte Carlo)** algorithm for pricing American options using **Monte Carlo simulations** and provide its implementation in Python. 
 
-References:
-
+References:</br>
 Gustafsson, W. (2015). Evaluating the Longstaff-Schwartz method for pricing of American options. </br>
 Longstaff, F. A., & Schwartz, E. S. (2001). Valuing American Options by Simulation: A Simple Least-Squares Approach. The Review of Financial Studies, vol. 14, no. 1, pp. 113–47.
 
