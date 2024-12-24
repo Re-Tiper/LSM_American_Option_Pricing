@@ -39,7 +39,7 @@ The LSM algorithm for pricing American options consists of the following steps:
    The core of the method is the use of least squares regression to estimate the continuation value at each time step:
 
    $$
-   V(t_i) = \mathbb{E}_{\widehat{\mathbb{P}}}\left[e^{-r(\tau - t_i)} G(\tau) \mid S(t_i)\right]
+   V(t_i) = \mathbb{E}_{\widehat{\mathbb{P}}}\left[e^{-r(\tau'-t_i)} G(\tau') \mid S(t_i)\right]
    $$
 
    Here, $\tau'$ is the optimal exercise time in $\{t_{i+1}, t_{i+2}, \dots, t_n = T\} \subseteq [0, T]$. The regression uses a set of basis functions, often polynomials, to approximate these expected values, enabling the decision of whether to exercise the option or continue holding it.
