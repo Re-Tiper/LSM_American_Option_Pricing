@@ -11,7 +11,7 @@ $$
 V(t) = \sup_{t \leq \tau \leq T} \mathbb{E}_{\widehat{\mathbb{P}}}\left[e^{-r(\tau-t)} G(\tau) \mid S(t)\right]
 $$
 
-where \( \tau \) is the exercise time. The calculation corresponds to finding the optimal exercise time \( \tau \), i.e., the moment when the option should be exercised. Once \( \tau \) is determined, we compute the expected value:
+where $\tau$ is the exercise time. The calculation corresponds to finding the optimal exercise time \( \tau \), i.e., the moment when the option should be exercised. Once \( \tau \) is determined, we compute the expected value:
 
 $$
 V(t) = \mathbb{E}_{\widehat{\mathbb{P}}}\left[e^{-r(\tau-t)} G(\tau) \mid S(t)\right]
