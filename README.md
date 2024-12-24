@@ -6,7 +6,7 @@ We will present the **LSM (Least Squares Monte Carlo)** algorithm \cite{LSM 1}, 
 The value of an American option can be expressed as:
 
 \[
-V(t) = sup_{t <= τ <= T} E_[P̂][exp(-r(τ-t)) * G(τ) | S(t)]
+V(t) = sup {t ≤ τ ≤ T} E_[P̂] [exp(-r(τ-t)) × G(τ) | S(t)]
 \]
 
 where \(\tau\) is the exercise time. The calculation corresponds to finding the optimal exercise time \(\tau\), i.e., the moment when the option should be exercised. Once \(\tau\) is determined, we compute the expected value:
